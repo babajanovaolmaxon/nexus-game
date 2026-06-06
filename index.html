@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life & Game Ecosystem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="main-title">Life & Game Ecosystem</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>Kripto Parol Generator</h2>
+            <p>Ismingiz va tug'ilgan yilingiz asosida sizga taxmin qilib bo'lmaydigan kuchli parol yaratib beradi.</p>
+            
+            <input type="text" id="parolIsm" placeholder="Ismingizni kiriting">
+            <input type="number" id="parolYil" placeholder="Tug'ilgan yilingiz">
+            
+            <button onclick="yaratParol()">Parol Yaratish</button>
+            <div id="parolNatija" class="result"></div>
+        </div>
+
+        <div class="card">
+            <h2>Bot bilan Jang (O'yin)</h2>
+            <p>Kompyuterga qarshi qadimiy o'yin. O'z tanlovingizni qiling va botni mag'lub eting!</p>
+            
+            <select id="oyinTanlov">
+                <option value="">Tanlang...</option>
+                <option value="tosh">Tosh ✊</option>
+                <option value="qaychi">Qaychi ✌️</option>
+                <option value="qogoz">Qog'oz ✋</option>
+            </select>
+            
+            <button onclick="boshlaOyin()">O'yinni Boshlash</button>
+            <div id="oyinNatija" class="result"></div>
+        </div>
+
+        <div class="card">
+            <h2>Sehrli Shar (Magic 8-Ball)</h2>
+            <p>Yuragingizdagi biror savolni o'ylang (Ha/Yo'q deb javob beradigan) va sharni aylantiring.</p>
+            
+            <input type="text" id="savolInput" placeholder="Savolingizni shu yerga yozing...">
+            
+            <button onclick="savol Ber()">Shardan so'rash</button>
+            <div id="sharNatija" class="result"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
